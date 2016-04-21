@@ -42,9 +42,9 @@ int main() {
         cin >> numbers[i];
     }
     
+//    long long result1 = MaxPairwiseProduct(numbers);
     long long result1 = MaxPairwiseProductFast(numbers);
-    long long result2 = MaxPairwiseProductFast(numbers);
-    cout << result1 << "\n" << result2 << "\n";
+    cout << result1;
 
     return 0;
 }
