@@ -35,6 +35,7 @@ long long MaxPairwiseProductFast(const vector<int>& numbers) {
 }
 
 int main() {
+    /*
     while (true){
         // generate the length of the input sequence
         int n = rand() % 5 + 2;
@@ -62,17 +63,18 @@ int main() {
             std::cerr << "OK \n";
         }
     }
-    //Commented to run stress testing
-//    int n;
-//    cin >> n;
-//    vector<int> numbers(n);
-//    for (int i = 0; i < n; ++i) {
-//        cin >> numbers[i];
-//    }
-//    
-////    long long result1 = MaxPairwiseProduct(numbers);
-//    long long result1 = MaxPairwiseProductFast(numbers);
-//    cout << result1;
+    */
+    
+    //Comment to run stress testing
+    int n;
+    cin >> n;
+    vector<int> numbers(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> numbers[i];
+    }
+    
+    long long result1 = MaxPairwiseProductFast(numbers);
+    cout << result1;
 
     return 0;
 }
